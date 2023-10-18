@@ -1,7 +1,17 @@
-import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 void main() {
   runApp(const MyApp());
+  StatusBarHelper.hideStatusBar();
+
+}
+class StatusBarHelper {
+  static const MethodChannel _channel = MethodChannel('status_bar_helper');
+
+  static Future<void> hideStatusBar() async {
+    await _channel.invokeMethod('hideStatusBar');
+  }
 }
 
 class MyApp extends StatelessWidget {
