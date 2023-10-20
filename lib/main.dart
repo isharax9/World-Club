@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:worldclub/pages/login_page.dart';
+import 'package:worldclub/pages/register_page.dart';
 void main() {
   runApp(const MyApp());
   
@@ -13,7 +14,7 @@ void main() {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: RegisterPage(),
       
       
     );
