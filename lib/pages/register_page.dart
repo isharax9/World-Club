@@ -91,53 +91,53 @@ class RegisterPage extends StatelessWidget {
                 onTap: signUserUp,
               ),
 
-              const SizedBox(height: 30),
-
-              // or continue with
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Divider(
-                        thickness: 0.5,
-                        color: Colors.grey[400],
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                      child: Text(
-                        'Or continue with',
-                        style: TextStyle(color: Colors.grey[700]),
-                      ),
-                    ),
-                    Expanded(
-                      child: Divider(
-                        thickness: 0.5,
-                        color: Colors.grey[400],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-
-              const SizedBox(height: 30),
-
-              // google + apple sign in buttons
-              const Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  // google button
-                  SquareTile(imagePath: 'lib/images/google.png'),
-
-                  SizedBox(width: 25),
-
-                  // apple button
-                  SquareTile(imagePath: 'lib/images/apple.png')
-                ],
-              ),
-
               const SizedBox(height: 20),
+
+              // // or continue with
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(horizontal: 25.0),
+              //   child: Row(
+              //     children: [
+              //       Expanded(
+              //         child: Divider(
+              //           thickness: 0.5,
+              //           color: Colors.grey[400],
+              //         ),
+              //       ),
+              //       Padding(
+              //         padding: const EdgeInsets.symmetric(horizontal: 10.0),
+              //         child: Text(
+              //           'Or continue with',
+              //           style: TextStyle(color: Colors.grey[700]),
+              //         ),
+              //       ),
+              //       Expanded(
+              //         child: Divider(
+              //           thickness: 0.5,
+              //           color: Colors.grey[400],
+              //         ),
+              //       ),
+              //     ],
+              //   ),
+              // ),
+
+              // const SizedBox(height: 30),
+
+              // // google + apple sign in buttons
+              // const Row(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   children: [
+              //     // google button
+              //     SquareTile(imagePath: 'lib/images/google.png'),
+
+              //     SizedBox(width: 25),
+
+              //     // apple button
+              //     SquareTile(imagePath: 'lib/images/apple.png')
+              //   ],
+              // ),
+
+              const SizedBox(height: 0),
 
               // Already a member? register now
               Padding(
