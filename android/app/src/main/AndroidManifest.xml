@@ -2,7 +2,7 @@
     <application
         android:label="worldclub"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/worldclub">
         <activity
             android:name=".MainActivity"
             android:exported="true"

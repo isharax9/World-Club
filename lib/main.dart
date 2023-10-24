@@ -15,7 +15,7 @@ void main() {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginPage(),
+      home: const LandingPage(),
       routes: {
         '/loginpage':(context)=> LoginPage(),
         '/registerpage':(context)=> RegisterPage(),
