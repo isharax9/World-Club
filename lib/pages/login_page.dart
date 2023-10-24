@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:worldclub/components/my_button.dart';
 import 'package:worldclub/components/my_textfield.dart';
 import 'package:worldclub/components/square_tile.dart';
+import 'package:worldclub/pages/register_page.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({super.key});
@@ -26,13 +27,13 @@ class LoginPage extends StatelessWidget {
 
               // logo
               const Text(
-                    "WORLD CLUB",
-                    style: TextStyle(
-                        fontWeight: FontWeight.w300,
-                        fontSize: 30,
-                        color: Color.fromARGB(255, 59, 35, 165)),
-                  ),
-              
+                "WORLD CLUB",
+                style: TextStyle(
+                    fontWeight: FontWeight.w300,
+                    fontSize: 35,
+                    color: Color.fromARGB(255, 55, 20, 212)),
+              ),
+
               const SizedBox(height: 20),
 
               // welcome back, you've been missed!
@@ -85,7 +86,7 @@ class LoginPage extends StatelessWidget {
                 onTap: signUserIn,
               ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
 
               // // or continue with
               // Padding(
@@ -142,11 +143,25 @@ class LoginPage extends StatelessWidget {
                     style: TextStyle(color: Colors.grey[700]),
                   ),
                   const SizedBox(width: 4),
-                  const Text(
-                    'Register now',
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushReplacement(context,
+                          MaterialPageRoute(builder: (BuildContext context) {
+                        return RegisterPage();
+                      }));
+                    },
+                    child: Center(
+                      child: Container(
+                        padding: const EdgeInsets.all(8),
+                        child: const Text(
+                          "Register Now",
+                          style: TextStyle(
+                              color: Colors.blue,
+                              fontStyle: FontStyle.normal,
+                              fontSize: 15,
+                              fontWeight: FontWeight.w700),
+                        ),
+                      ),
                     ),
                   ),
                 ],

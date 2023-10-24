@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:worldclub/components/my_button2.dart';
 import 'package:worldclub/components/my_textfield.dart';
 import 'package:worldclub/components/square_tile.dart';
+import 'package:worldclub/pages/login_page.dart';
 
 class RegisterPage extends StatelessWidget {
   RegisterPage({super.key});
@@ -29,8 +30,8 @@ class RegisterPage extends StatelessWidget {
                     "WORLD CLUB",
                     style: TextStyle(
                         fontWeight: FontWeight.w300,
-                        fontSize: 30,
-                        color: Color.fromARGB(255, 59, 35, 165)),
+                        fontSize: 35,
+                        color: Color.fromARGB(255, 55, 20, 212)),
                   ),
               
               const SizedBox(height: 20),
@@ -150,11 +151,25 @@ class RegisterPage extends StatelessWidget {
                       style: TextStyle(color: Colors.grey[700]),
                     ),
                     const SizedBox(width: 4),
-                    const Text(
-                      'Login now',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontWeight: FontWeight.bold,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(context,
+                            MaterialPageRoute(builder: (BuildContext context) {
+                          return LoginPage();
+                        }));
+                      },
+                      child: Center(
+                        child: Container(
+                          padding: const EdgeInsets.all(8),
+                          child: const Text(
+                            "Login Now",
+                            style: TextStyle(
+                                color: Colors.blue,
+                                fontStyle: FontStyle.normal,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w700),
+                          ),
+                        ),
                       ),
                     ),
                   ],

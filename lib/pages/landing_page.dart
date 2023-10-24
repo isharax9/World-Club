@@ -411,7 +411,7 @@ class LandingPage extends StatelessWidget {
                     heightFactor: 1,
                     widthFactor: 10,
                     child: Text(
-                      "© 2022 - 2023 World Club - All Rights Reserved. App designed by; Ishara Lakshitha - Contact Me; isharax9@gmail.com Last Updated : 10/24/2023 14:51:51",
+                      "© 2022 - 2023 World Club - All Rights Reserved. App designed & developed by; Ishara Lakshitha - Contact Me; isharax9@gmail.com Last Updated : 10/24/2023 17:01:51",
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w100,
