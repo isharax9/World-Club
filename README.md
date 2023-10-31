@@ -32,6 +32,10 @@ To get started with World Club, follow these steps:
 
 If you encounter any issues or have questions, please feel free to [open an issue](https://github.com/isharax9/World-Club/issues) on this repository. We're here to help!
 
+## Give a Star ⭐
+
+Your support and feedback are highly valued, so if you find this project useful, consider giving it a star ⭐️. I appreciate your interest in my work.
+
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
